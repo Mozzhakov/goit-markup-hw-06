@@ -515,7 +515,6 @@ button {
 
 .footer-full {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 
@@ -562,6 +561,10 @@ button {
 
 /* Join */
 
+.join {
+  margin-left: 70px;
+}
+
 .join-title,
 .subscribe-title {
   display: block;
@@ -601,7 +604,7 @@ button {
 
 /* Subscribe */
 
-.subscribe-form {
+.subscribe-box {
   margin-left: auto;
 }
 
@@ -645,16 +648,13 @@ button {
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   gap: 10px;
+
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .submit-button:hover,
 .submit-button:focus {
   background-color: var(--main-btn-hover-color);
-}
-
-.subscribe-box {
-  display: flex;
-  align-items: flex-end;
 }
 
 /* Portfolio */
@@ -783,6 +783,11 @@ button {
   margin-bottom: 12px;
 }
 
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .input-title {
   display: block;
   font-size: 12px;
@@ -794,8 +799,6 @@ button {
 
 .input-with-icon {
   position: relative;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .modal-input {
@@ -827,12 +830,16 @@ button {
   fill: var(--accent-color);
 }
 
+.form-comment-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .comment {
   resize: none;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -844,11 +851,16 @@ button {
   transition: border var(--duration) var(--timing-function);
 }
 
+.form-check-label {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .check-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  
 }
 
 .input-check ~ .check-icon {
