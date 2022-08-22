@@ -608,6 +608,11 @@ button {
   margin-left: auto;
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
 .subscribe-input {
   width: 358px;
   height: 50px;
@@ -860,7 +865,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .input-check ~ .check-icon {
@@ -909,7 +913,7 @@ button {
 
 .policy-link {
   color: var(--accent-color);
-  text-decoration-line: underline;;
+  text-decoration-line: underline;
 }
 
 .modal-btn {
